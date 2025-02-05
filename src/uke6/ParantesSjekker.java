@@ -41,6 +41,10 @@ public class ParantesSjekker {
             System.out.println(ps.sjekkParanteser("{ [ ( ) }"));   // false
             System.out.println(ps.sjekkParanteser("[ ( ) ] }"));   // false
             System.out.println(ps.sjekkParanteser("{ [ ( ] ) }")); // false
+            System.out.println(ps.sjekkParanteser("{ [ ( ) ] }")); // true
+            System.out.println(ps.sjekkParanteser("{ [ ( ) }"));   // false
+            System.out.println(ps.sjekkParanteser("[ ( ) ] }"));   // false
+            System.out.println(ps.sjekkParanteser("{ [ ( ] ) }")); // false
             System.out.println(ps.sjekkParanteser("class HelloWorld { public static void main(String[] args) { System.out.println(\"Hello World!\"); } }")); // true
         }
 }
