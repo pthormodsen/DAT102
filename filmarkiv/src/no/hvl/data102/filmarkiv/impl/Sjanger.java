@@ -1,7 +1,7 @@
 package no.hvl.data102.filmarkiv.impl;
 
 public enum Sjanger {
-    ACTION, DRAMA, HISTORY, SCIFI, ANIMASJON, ROMANTIKK, SKREKK;
+    ACTION, DRAMA, HISTORY, SCIFI, ANIMASJON, ROMANTIKK, SKREKK, KOMEDIE;
 
     public static Sjanger finnSjanger(String navn) {
         for (Sjanger s : Sjanger.values()) {
