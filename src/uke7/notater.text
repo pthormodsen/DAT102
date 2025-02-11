@@ -1,0 +1,47 @@
+Flettesortering
+    Rekursiv flettesortering
+    Ordner liste av verdier ved gjentatt halvering av listen, inntil
+    hver delliste har kun ett element for deretter å sette sammen dellistene.
+    Kan implementeres med tabell eller lenker.
+
+Flette
+    Ser først på å flette sammen to sorterte lister til en sortert liste.
+    Ny tabC som satt sammen av tabA og tabB
+
+så lenge (flere elementer igjen i begge tabellene) {
+    hvis(tabA[a] <= tabB[b] {
+        tabC[c] = tabA[a];
+        a++;
+    } ellers {
+        tabC[c] = tabB[b];
+        b++
+    }
+    c++;
+}
+
+
+Algoritme flettesortering
+    flettesorter(T[] a, start, slutt){
+     viss start == slutt
+     return
+    }
+
+
+
+Kvikksortering
+    Ordner en liste av verdier ved å splitte listen emd hensyn på et element kalt pivot eller splittelement.
+    Vi deler listen i 2, en del som inneholder små elementer og en med store elementer.
+    Algoritmen fungerer på kjedet struktur, men vanligvis tenker vi at vi har elementene i en tabell.
+
+Etter oppdeling
+    <= pivot, pivot, >= pivot
+    Kaller rekursivt på kvikksortering metoden.
+
+Kvikksortering mest effektiv dersom hver splitting fører til to like eller nesten like store partisjoner.
+Optimalt og finne medianen av et odde antall elementer for og finne pivot point.
+
+Bruker to metoder:
+    delOpp
+    kvikkSort
+
+Algoritme kvikkSort(tabell, min, maks)
